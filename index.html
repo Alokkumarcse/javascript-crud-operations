@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>crud operations</title>
+  <!-- stylesheet linked here -->
+  <link rel="stylesheet" href="./index.css">
+  <!-- fontawsome CDN -->
+  <script src="https://kit.fontawesome.com/9d34235b2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- App name -->
+  <h1 id="heading"> Comment App </h1>
+
+  <!-- Main container of app -->
+  <div class="container">
+
+    <!-- left part of container -->
+    <div class="left">
+      <form id="form">
+        <label for="input">Write your post here</label>
+        <br><br>
+        <textarea name="" id="input" rows="10"></textarea>
+        <div id="message"> </div>
+        <br><br>
+        <button type="submit">Post</button>
+      </form>
+    </div>
+
+    <!-- right part of container -->
+    <div class="right">
+      <h3>Your posts here</h3>
+      <!-- all post store in this div -->
+      <div id="posts">
+        <div>
+          <p>This is default message.</p>
+          <span class="options">
+            <i onClick="editPost(this)" class="fa-solid fa-pen-to-square"></i>
+            <i onClick="deletePost(this)" class="fa-solid fa-trash"></i>
+          </span>
+        </div>
+        <div>
+          <p class="message-input">This message post by bot.</p>
+          <span class="options">
+            <i onClick="editPost(this)" class="fa-solid fa-pen-to-square"></i>
+            <i onClick="deletePost(this)" class="fa-solid fa-trash"></i>
+          </span>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+   <!-- javascript file is here -->
+   <script src="./index.js"></script>
+</html>

@@ -1,0 +1,77 @@
+body{
+  margin: 0px 50px;
+  font-family: sans-serif;
+}
+
+/* styles for app name */
+#heading{
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: rgb(226, 157, 157) 1px 5px;
+  color:rgb(148, 145, 139);
+}
+
+/* style rules for main container of App */
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid red;
+  column-gap: 10px;
+  padding: 10px;
+  background-image: linear-gradient(30deg, rgb(204, 235, 204), rgb(174, 174, 187) );
+}
+
+/* left block styling */
+.left{
+  width: 40%;
+}
+
+#input{
+  width: 90%;
+  font-size: 20px;
+  resize: vertical;
+  background-image: linear-gradient(30deg, rgb(204, 235, 204), rgb(174, 174, 187) );
+}
+
+button{
+  width: 20%;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius:10px;
+  background-image: linear-gradient(45deg, green, white, rgb(231, 117, 23));
+}
+
+#message{
+  color: red;
+  padding-top:5px;
+}
+
+/* right block styling */
+.right{
+  width: 50%;
+}
+
+#posts div{
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#posts div p{
+  width: 85%;
+  text-align: justify;
+}
+
+.options{
+  display: flex;
+ column-gap:1rem;
+}
+
+.options i{
+  cursor: pointer;
+}
+
